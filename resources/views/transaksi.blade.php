@@ -109,7 +109,7 @@
                             <td>{{ $data->kode_unik }}</td>
                             <td>{{ $data->bank }}</td>
                             <td>{{ $data->status }}</td>
-                            <td><a href="/home/u7082880/public_html/wisnukripik/dist/transfer". $data->buktiTransfer) }}" target="_blank">Lihat
+                            <td><a href="/home/u7082880/public_html/wisnukripik/dist/transfer".$data->buktiTransfer target="_blank">Lihat
                                     Bukti Transfer</a></td>
                             <td>{{ $data->created_at }}</td>
                             <td>{{ $data->updated_at }}</td>
