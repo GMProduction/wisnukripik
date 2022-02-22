@@ -42,7 +42,7 @@ class ProdukController extends Controller
         if($request->image->getClientOriginalName()){
             $file = str_replace(' ', '', $request->image->getClientOriginalName());
             $fileName = date('mYdHs').rand(1,100).'_'.$file;
-            $request->image->storeAs('public/produk', $fileName);
+            $request->image->move('/home/u7082880/public_html/wisnukripik/dist/produk', $fileName);
         }
 
         $user = Produk::create(array_merge($request->all(), [
