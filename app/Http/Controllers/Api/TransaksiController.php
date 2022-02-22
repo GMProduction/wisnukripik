@@ -176,7 +176,7 @@ class TransaksiController extends Controller
         if($request->image->getClientOriginalName()){
             $file = str_replace(' ', '', $request->image->getClientOriginalName());
             $fileName = date('mYdHs').rand(1,100).'_'.$file;
-            $request->image->move(public_path('../../public_html/wisnukripik/dist/transfer'), $fileName);
+            $request->image->move('/home/u7082880/public_html/wisnukripik/dist/transfer', $fileName);
         } else{
             return $this->error('Gagal Memuat Data');
         }
